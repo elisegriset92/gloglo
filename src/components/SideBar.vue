@@ -34,6 +34,7 @@
        
 
         <router-link
+        @click="changeLoader()"
           class="flex items-center duration-200 mt-4 py-2 px-6 border-l-4"
           :class="[$route.name === 'Mediatheque' ? activeClass : inactiveClass]"
           to="/mediatheque"
@@ -48,12 +49,15 @@
   </div>
 </template>
 
-<script lang="ts">
+<script >
 import { defineComponent, ref } from "vue";
+import { mediatheque } from "../composable/mediatheque";
 import { useSidebar } from "../hooks/useSidebar";
+
 export default defineComponent({
   setup() {
     const { isOpen } = useSidebar();
+    const {changeLoader} = mediatheque();
     const activeClass = ref(
       "bg-gray-600 bg-opacity-25 text-gray-100 border-gray-100"
     );
@@ -64,14 +68,17 @@ export default defineComponent({
       isOpen,
       activeClass,
       inactiveClass,
+      changeLoader
     };
   },
 });
+
 </script>
 
 
 <style scoped>
 .sideBar {
-  background-color: var(--color-green)
+  background-color: var(--color-green);
+  height: 100vh;
 }
 </style>

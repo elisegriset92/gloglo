@@ -494,7 +494,8 @@ a:focus {
 	} */
 	.preview__item {
 		padding: 30px;
-		height: 80vh;
+		overflow: scroll;
+		max-height: 80vh;
 		width: 80vw;
 		grid-template-columns: 47% 53%;
 		grid-template-rows: minmax(max(5rem, 18vh), 1fr) auto auto 1fr;

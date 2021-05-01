@@ -26,18 +26,11 @@ export function vocabulary() {
     });
   }
 
-  function addToList() {
-    console.log('hello', this.$refs)
-    // todos.value.push({
-    //   id: todos.value.length,
-    //   title: `New item! ${todos.value.length}`,
-    // });
-  }
+  
 
   return {
     datas,
     loader,
     deleteFromList,
-    addToList,
   };
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="content" @click="addToList()">
+    <div class="content" >
       <h2 class="content__title">
         <span class="content__title-line content__title-line--1" data-splitting
           >Glossaire/</span

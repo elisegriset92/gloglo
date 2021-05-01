@@ -1,5 +1,5 @@
 <template>
-  <div class="preview__item text-gray-600 " :id="'preview-' + item.uid">
+  <div class="preview__item text-gray-600 "  :id="'preview-' + item.uid">
     <button class="preview__item-back unbutton"><span>Retour</span></button>
     <div class="preview__item-imgwrap">
       <div
