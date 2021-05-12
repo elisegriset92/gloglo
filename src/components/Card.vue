@@ -23,11 +23,11 @@
           }}
         </p>
       </div>
-      <div class="px-6 pt-4 pb-2">
-        <span
+      <div class="px-6 pt-4 pb-2" >
+       <a :href="item.data.link.url" target="_blank"><span
           class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-          >{{ item.slugs[0] }}</span
-        >
+          >{{ item.data.link_name.length  ? item.data.link_name[0].text : 'pas de source' }}</span
+        ></a>
       </div>
     </div>
     <hr />

@@ -15,7 +15,7 @@ const routes = [
     children: [
       {
 
-        path: '/mediatheque/:name/:id',
+        path: '/mediatheque/:name',
         name: 'mediatheque',
         params: {name: '', id: null},
         component: Mediatheque

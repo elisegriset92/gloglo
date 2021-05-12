@@ -1,12 +1,10 @@
 <template>
   <div class="flex">
-    <!-- Backdrop -->
     <div
       :class="isOpen ? 'block' : 'hidden'"
       @click="isOpen = false"
       class="fixed z-20 inset-0 opacity-50 transition-opacity lg:hidden"
     ></div>
-    <!-- End Backdrop -->
 
     <div
       :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'"
@@ -52,7 +50,7 @@
 <script >
 import { defineComponent, ref } from "vue";
 import { mediatheque } from "../composable/mediatheque";
-import { useSidebar } from "../hooks/useSidebar";
+import { useSidebar } from "../composable/useSidebar";
 
 export default defineComponent({
   setup() {

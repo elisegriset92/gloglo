@@ -109,6 +109,49 @@
            :style="'background-image:url('+datas[13].data.image.url+')' "
           ></div >
           </a>
+          <a :href="'#preview-'+datas[14].uid" :class="'grid__item pos-'+datas[14].uid" :data-title="datas[14].data.name" :id="datas[14].uid"  >
+          <div
+            class="grid__item-img"
+            
+           :style="'background-image:url('+datas[14].data.image.url+')' "
+          ></div >
+          </a>
+           <a :href="'#preview-'+datas[15].uid" :class="'grid__item pos-'+datas[15].uid" :data-title="datas[15].data.name" :id="datas[15].uid"  >
+          <div
+            class="grid__item-img"
+            
+            
+           :style="'background-image:url('+datas[15].data.image.url+')' "
+          ></div >
+          </a>
+           <a :href="'#preview-'+ datas[16].uid" :class="'grid__item pos-'+datas[16].uid" :data-title="datas[16].data.name" :id="datas[16].uid"  >
+          <div
+            class="grid__item-img"
+            
+           :style="'background-image:url('+datas[16].data.image.url+')' "
+          ></div >
+          </a>
+           <a :href="'#preview-'+ datas[17].uid" :class="'grid__item pos-'+datas[17].uid" :data-title="datas[17].data.name" :id="datas[17].uid"  >
+          <div
+            class="grid__item-img"
+            
+           :style="'background-image:url('+datas[17].data.image.url+')' "
+          ></div >
+          </a>
+          <a :href="'#preview-'+ datas[18].uid" :class="'grid__item pos-'+datas[18].uid" :data-title="datas[18].data.name" :id="datas[18].uid"  >
+          <div
+            class="grid__item-img"
+            
+           :style="'background-image:url('+datas[18].data.image.url+')' "
+          ></div >
+          </a>
+          <a :href="'#preview-'+ datas[19].uid" :class="'grid__item pos-'+datas[19].uid" :data-title="datas[19].data.name" :id="datas[19].uid"  >
+          <div
+            class="grid__item-img"
+            
+           :style="'background-image:url('+datas[19].data.image.url+')' "
+          ></div >
+          </a>
           </div>
       <!-- </div>  -->
       <div class="preview" v-for="(oneData, index) in datas" :key="index">
@@ -163,6 +206,7 @@ export default {
 
   mounted () {
     myLib.call();
+
   },
  
 }

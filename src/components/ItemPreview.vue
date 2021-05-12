@@ -1,5 +1,5 @@
 <template>
-  <div class="preview__item text-gray-600 "  :id="'preview-' + item.uid">
+  <div class="preview__item text-gray-600 rounded  shadow-lg mt-6"  :id="'preview-' + item.uid">
     <button class="preview__item-back unbutton"><span>Retour</span></button>
     <div class="preview__item-imgwrap">
       <div
@@ -14,7 +14,7 @@
       </div>
       <p class="preview__item-description">{{ item.data.def.length? item.data.def[0].text : 'pas de définition' }}</p>
       <button class="preview__item-info unbutton"></button>
-      <router-link  :to="{ name: 'mediatheque', params: {name: item.data.name, id: item.uid } }"
+      <router-link  :to="{  path: '/mediatheque', name: 'mediatheque', params: {name: item.data.name, id: item.uid } }"
         ><button class="preview__item-button">
           Recommandations sur le sujet
         </button>

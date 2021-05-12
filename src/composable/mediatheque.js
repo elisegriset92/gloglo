@@ -1,13 +1,17 @@
-import {ref, watchEffect} from 'vue';
+import {ref, watchEffect,  reactive, toRefs } from 'vue';
 import Prismic from 'prismic-javascript';
 import router from '../router/index'
+
+
+
+
+
 
 export function mediatheque() {
   let datas = ref([]);
   let currentRoute = ref(router.currentRoute.value.params);
   let loader = ref(true);
   watchEffect(() => {
-console.log("2 tu watch")
     if (loader.value) {
       const api = Prismic.client('https://glossaire.prismic.io/api/v2');
       getWord(api);
@@ -29,11 +33,9 @@ console.log("2 tu watch")
       datas.value = final.results;
     }
     loader.value = false;
-    console.log(datas.value.length)
   }
 
   function changeLoader() {
-    console.log('1 change loader')
     loader.value =true;
   }
   

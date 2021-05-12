@@ -30,13 +30,14 @@ export default {
 #main {
   display: grid;
   grid-template-columns: 6rem auto;
-  /* Or grid-template-columns: config('width.24') auto; */
+
+  /* grid-template-columns: config('width.24') auto; */
 }
 
 @media (min-width: 1200px) { 
-/* Or @media (min-width: config('screens.xl')) { */
+ /* @media (min-width: config('screens.xl')) { */
   
   #main { grid-template-columns: 12rem auto; }
-  /* Or #main { grid-template-columns: config('width.48') auto; } */
+  /* #main { grid-template-columns: config('width.48') auto; } */
 }
 </style>
