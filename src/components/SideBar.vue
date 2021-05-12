@@ -77,6 +77,6 @@ export default defineComponent({
 <style scoped>
 .sideBar {
   background-color: var(--color-green);
-  height: 100vh;
+  height: 100%;
 }
 </style>
